@@ -42,7 +42,7 @@ Tizim ma'lumotlar o'rtasidagi bog'liqlikni saqlash va ma'lumotlar sizib chiqishi
 </p>
 
 ## 📂 Loyiha Tarkibi
-* `ai_jobs_market_predictor.ipynb` - To'liq tahlil va model noutbuki (Tozalangan variantda).
+* `Tech-Job-Salary-Predictor.ipynb` - To'liq tahlil va model noutbuki (Tozalangan variantda).
 * `ai_jobs_market_2025_2026.csv` - Modelni o'qitishda foydalanilgan dataset fayli.
 * `salary_prediction_plot.png` - Real va bashorat qilingan maoshlar grafigi.
 * `confusion_matrix.png` - Klassifikatsiya matritsasi grafigi.
