@@ -25,27 +25,30 @@ Tizim ma'lumotlar o'rtasidagi bog'liqlikni saqlash va ma'lumotlar sizib chiqishi
         └──────────────────────────────────────┘
 ```
 
-1. **XGBoost Regressor (1-Bosqich):** Nomzodning ko'nikmalari, davlati, shahar va kompaniya xajmi kabi xususiyatlar asosida bozor qiymatidagi yillik maoshni (`annual_salary_usd`) hisoblaydi.
-2. **Random Forest Classifier (2-Bosqich):** Bashorat qilingan maoshni qo'shimcha belgi sifatida qabul qilib, nomzodning tajribasini `Junior/Middle` yoki `Senior/Lead` guruhlariga ajratadi.
+## 📈 Model Metriklari va Vizuallashtirilgan Natijalar
 
-## 📈 Model Metriklari va Natijalari
-
+### 1. Metrik ko'rsatkichlar
 * **Maosh Bashorati (XGBoost Regressor):**
-  * **R² Score:** `0.81` (Maosh o'zgaruvchanligining 81% qismini aniq tushuntiradi)
+  * **R² Score:** `0.81` (81% tushuntirib berish aniqligi)
   * **MAE (O'rtacha mutloq xatolik):** `$21,078.71`
 * **Tajriba Darajasini Tasniflash (Random Forest Classifier):**
   * **Umumiy aniqlik (Accuracy):** `73.67%`
-  * **F1-Score (Junior/Middle):** `0.75`
-  * **F1-Score (Senior/Lead):** `0.72`
+
+### 2. Grafik Natijalari
+
+<p align="center">
+  <img src="salary_prediction_plot.png" width="48%" />
+  <img src="confusion_matrix.png" width="45%" />
+</p>
 
 ## 📂 Loyiha Tarkibi
-* `ai_jobs_market_predictor.ipynb` - To'liq tahlil va model noutbuki.
+* `ai_jobs_market_predictor.ipynb` - To'liq tahlil va model noutbuki (Tozalangan variantda).
 * `ai_jobs_market_2025_2026.csv` - Modelni o'qitishda foydalanilgan dataset fayli.
+* `salary_prediction_plot.png` - Real va bashorat qilingan maoshlar grafigi.
+* `confusion_matrix.png` - Klassifikatsiya matritsasi grafigi.
 * `README.md` - Loyiha haqida batafsil ma'lumot.
 
 ## 🚀 Ishga tushirish
-
-Ushbu loyihani mahalliy kompyuteringizda ishga tushirish uchun:
 ```bash
 git clone https://github.com/Yasmina1602/Tech-Job-Salary-Predictor.git
 cd Tech-Job-Salary-Predictor
